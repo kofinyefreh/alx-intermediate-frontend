@@ -554,12 +554,36 @@ video {
   display: none;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.grid {
+  display: grid;
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
+}
+
+@media (max-width: 768px) 
+{
+  main {
+    grid-template-columns: 1fr;
+  }
 }
