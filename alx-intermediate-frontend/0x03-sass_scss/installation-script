@@ -1,0 +1,10 @@
+# Step-by-step SASS installation
+
+# 1. Installed node
+Download and install node from their website
+
+# 2. Check whether node is installed properly
+node -v
+
+# 3. Installed SASS
+npm install sass
